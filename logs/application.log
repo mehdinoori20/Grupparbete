@@ -1,33 +1,33 @@
-2024-06-11T21:24:25.476+02:00  INFO 7880 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 7880 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
-2024-06-11T21:24:25.481+02:00  INFO 7880 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-06-11T21:24:25.638+02:00  INFO 7880 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-11T21:24:25.640+02:00  INFO 7880 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-11T21:24:29.508+02:00  INFO 7880 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-11T21:24:29.586+02:00  INFO 7880 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 0 JPA repository interfaces.
-2024-06-11T21:24:33.149+02:00  INFO 7880 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-11T21:24:33.209+02:00  INFO 7880 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-11T21:24:33.210+02:00  INFO 7880 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-11T21:24:33.465+02:00  INFO 7880 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-11T21:24:33.466+02:00  INFO 7880 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7824 ms
-2024-06-11T21:24:33.595+02:00  INFO 7880 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-11T21:24:34.348+02:00  INFO 7880 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-06-11T21:24:34.353+02:00  INFO 7880 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-11T21:24:34.388+02:00  INFO 7880 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-06-11T21:24:34.957+02:00  INFO 7880 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-11T21:24:35.282+02:00  INFO 7880 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-11T21:24:35.448+02:00  INFO 7880 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-11T21:24:36.724+02:00  INFO 7880 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-11T21:24:36.911+02:00  WARN 7880 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-11T21:24:37.345+02:00 ERROR 7880 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T21:24:37.346+02:00  WARN 7880 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T21:24:37.361+02:00  WARN 7880 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-11T21:24:37.361+02:00  INFO 7880 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-11T21:24:37.367+02:00  INFO 7880 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-11T21:24:37.374+02:00  INFO 7880 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-06-11T21:24:37.409+02:00  INFO 7880 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-06-12T14:10:03.167+02:00  INFO 13800 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 13800 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
+2024-06-12T14:10:03.214+02:00  INFO 13800 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T14:10:03.359+02:00  INFO 13800 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12T14:10:03.359+02:00  INFO 13800 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12T14:10:05.392+02:00  INFO 13800 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T14:10:05.564+02:00  INFO 13800 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 2 JPA repository interfaces.
+2024-06-12T14:10:07.471+02:00  INFO 13800 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-12T14:10:07.486+02:00  INFO 13800 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-12T14:10:07.486+02:00  INFO 13800 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-12T14:10:07.643+02:00  INFO 13800 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-12T14:10:07.658+02:00  INFO 13800 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4299 ms
+2024-06-12T14:10:07.768+02:00  INFO 13800 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T14:10:08.281+02:00  INFO 13800 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-06-12T14:10:08.281+02:00  INFO 13800 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T14:10:08.297+02:00  INFO 13800 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-12T14:10:08.654+02:00  INFO 13800 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T14:10:08.826+02:00  INFO 13800 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-12T14:10:08.935+02:00  INFO 13800 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T14:10:09.753+02:00  INFO 13800 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T14:10:09.878+02:00  WARN 13800 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-12T14:10:10.254+02:00 ERROR 13800 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:10:10.254+02:00  WARN 13800 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:10:10.269+02:00  WARN 13800 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-12T14:10:10.269+02:00  INFO 13800 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-12T14:10:10.286+02:00  INFO 13800 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-12T14:10:10.286+02:00  INFO 13800 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-12T14:10:10.318+02:00  INFO 13800 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-06-11T21:24:37.476+02:00 ERROR 7880 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-06-12T14:10:10.365+02:00 ERROR 13800 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
@@ -70,36 +70,36 @@ Caused by: org.hibernate.AnnotationException: Entity 'se.mehdi.securewebapp.enti
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
 	... 18 common frames omitted
 
-2024-06-11T21:27:26.401+02:00  INFO 6696 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 6696 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
-2024-06-11T21:27:26.409+02:00  INFO 6696 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-06-11T21:27:26.563+02:00  INFO 6696 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-11T21:27:26.563+02:00  INFO 6696 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-11T21:27:28.777+02:00  INFO 6696 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-11T21:27:28.852+02:00  INFO 6696 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 0 JPA repository interfaces.
-2024-06-11T21:27:30.591+02:00  INFO 6696 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-11T21:27:30.623+02:00  INFO 6696 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-11T21:27:30.624+02:00  INFO 6696 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-11T21:27:30.769+02:00  INFO 6696 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-11T21:27:30.771+02:00  INFO 6696 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4205 ms
-2024-06-11T21:27:30.886+02:00  INFO 6696 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-11T21:27:31.389+02:00  INFO 6696 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-06-11T21:27:31.394+02:00  INFO 6696 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-11T21:27:31.430+02:00  INFO 6696 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-06-11T21:27:31.815+02:00  INFO 6696 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-11T21:27:32.090+02:00  INFO 6696 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-11T21:27:32.208+02:00  INFO 6696 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-11T21:27:33.178+02:00  INFO 6696 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-11T21:27:33.299+02:00  WARN 6696 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-11T21:27:33.656+02:00 ERROR 6696 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T21:27:33.658+02:00  WARN 6696 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T21:27:33.674+02:00  WARN 6696 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-11T21:27:33.675+02:00  INFO 6696 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-11T21:27:33.680+02:00  INFO 6696 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-11T21:27:33.686+02:00  INFO 6696 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-06-11T21:27:33.715+02:00  INFO 6696 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-06-12T14:11:47.753+02:00  INFO 15332 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 15332 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
+2024-06-12T14:11:47.753+02:00  INFO 15332 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T14:11:47.893+02:00  INFO 15332 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12T14:11:47.893+02:00  INFO 15332 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12T14:11:50.142+02:00  INFO 15332 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T14:11:50.267+02:00  INFO 15332 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 2 JPA repository interfaces.
+2024-06-12T14:11:52.049+02:00  INFO 15332 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-12T14:11:52.080+02:00  INFO 15332 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-12T14:11:52.080+02:00  INFO 15332 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-12T14:11:52.252+02:00  INFO 15332 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-12T14:11:52.252+02:00  INFO 15332 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4346 ms
+2024-06-12T14:11:52.361+02:00  INFO 15332 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T14:11:52.846+02:00  INFO 15332 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-06-12T14:11:52.846+02:00  INFO 15332 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T14:11:52.877+02:00  INFO 15332 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-12T14:11:53.283+02:00  INFO 15332 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T14:11:53.439+02:00  INFO 15332 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-12T14:11:53.518+02:00  INFO 15332 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T14:11:54.316+02:00  INFO 15332 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T14:11:54.425+02:00  WARN 15332 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-12T14:11:54.762+02:00 ERROR 15332 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:11:54.762+02:00  WARN 15332 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:11:54.777+02:00  WARN 15332 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-12T14:11:54.793+02:00  INFO 15332 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-12T14:11:54.793+02:00  INFO 15332 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-12T14:11:54.793+02:00  INFO 15332 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-12T14:11:54.824+02:00  INFO 15332 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-06-11T21:27:33.772+02:00 ERROR 6696 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-06-12T14:11:54.887+02:00 ERROR 15332 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
@@ -142,36 +142,36 @@ Caused by: org.hibernate.AnnotationException: Entity 'se.mehdi.securewebapp.enti
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
 	... 18 common frames omitted
 
-2024-06-11T21:27:37.421+02:00  INFO 7740 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 7740 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
-2024-06-11T21:27:37.428+02:00  INFO 7740 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-06-11T21:27:37.601+02:00  INFO 7740 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-11T21:27:37.601+02:00  INFO 7740 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-11T21:27:39.893+02:00  INFO 7740 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-11T21:27:39.944+02:00  INFO 7740 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 0 JPA repository interfaces.
-2024-06-11T21:27:41.829+02:00  INFO 7740 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-11T21:27:41.860+02:00  INFO 7740 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-11T21:27:41.862+02:00  INFO 7740 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-11T21:27:42.003+02:00  INFO 7740 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-11T21:27:42.004+02:00  INFO 7740 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4402 ms
-2024-06-11T21:27:42.105+02:00  INFO 7740 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-11T21:27:42.635+02:00  INFO 7740 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-06-11T21:27:42.639+02:00  INFO 7740 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-11T21:27:42.673+02:00  INFO 7740 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-06-11T21:27:43.043+02:00  INFO 7740 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-11T21:27:43.203+02:00  INFO 7740 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-11T21:27:43.294+02:00  INFO 7740 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-11T21:27:44.119+02:00  INFO 7740 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-11T21:27:44.223+02:00  WARN 7740 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-11T21:27:44.524+02:00 ERROR 7740 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T21:27:44.525+02:00  WARN 7740 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T21:27:44.540+02:00  WARN 7740 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-11T21:27:44.540+02:00  INFO 7740 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-11T21:27:44.545+02:00  INFO 7740 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-11T21:27:44.550+02:00  INFO 7740 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-06-11T21:27:44.576+02:00  INFO 7740 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-06-12T14:12:13.805+02:00  INFO 12316 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 12316 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
+2024-06-12T14:12:13.810+02:00  INFO 12316 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T14:12:13.946+02:00  INFO 12316 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12T14:12:13.947+02:00  INFO 12316 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12T14:12:16.192+02:00  INFO 12316 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T14:12:16.333+02:00  INFO 12316 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 2 JPA repository interfaces.
+2024-06-12T14:12:18.348+02:00  INFO 12316 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-12T14:12:18.389+02:00  INFO 12316 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-12T14:12:18.389+02:00  INFO 12316 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-12T14:12:18.716+02:00  INFO 12316 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-12T14:12:18.718+02:00  INFO 12316 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4769 ms
+2024-06-12T14:12:18.859+02:00  INFO 12316 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T14:12:19.536+02:00  INFO 12316 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-06-12T14:12:19.540+02:00  INFO 12316 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T14:12:19.562+02:00  INFO 12316 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-12T14:12:20.121+02:00  INFO 12316 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T14:12:20.434+02:00  INFO 12316 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-12T14:12:20.582+02:00  INFO 12316 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T14:12:21.852+02:00  INFO 12316 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T14:12:22.021+02:00  WARN 12316 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-12T14:12:22.465+02:00 ERROR 12316 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:12:22.466+02:00  WARN 12316 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:12:22.489+02:00  WARN 12316 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-12T14:12:22.489+02:00  INFO 12316 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-12T14:12:22.493+02:00  INFO 12316 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-12T14:12:22.504+02:00  INFO 12316 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-12T14:12:22.551+02:00  INFO 12316 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-06-11T21:27:44.624+02:00 ERROR 7740 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-06-12T14:12:22.630+02:00 ERROR 12316 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
@@ -214,36 +214,36 @@ Caused by: org.hibernate.AnnotationException: Entity 'se.mehdi.securewebapp.enti
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
 	... 18 common frames omitted
 
-2024-06-11T21:29:11.870+02:00  INFO 448 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 448 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
-2024-06-11T21:29:11.876+02:00  INFO 448 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-06-11T21:29:12.042+02:00  INFO 448 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-11T21:29:12.042+02:00  INFO 448 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-11T21:29:14.104+02:00  INFO 448 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-11T21:29:14.155+02:00  INFO 448 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 0 JPA repository interfaces.
-2024-06-11T21:29:15.775+02:00  INFO 448 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-11T21:29:15.807+02:00  INFO 448 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-11T21:29:15.808+02:00  INFO 448 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-11T21:29:15.936+02:00  INFO 448 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-11T21:29:15.937+02:00  INFO 448 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3894 ms
-2024-06-11T21:29:16.042+02:00  INFO 448 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-11T21:29:16.530+02:00  INFO 448 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-06-11T21:29:16.534+02:00  INFO 448 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-11T21:29:16.572+02:00  INFO 448 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-06-11T21:29:16.908+02:00  INFO 448 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-11T21:29:17.047+02:00  INFO 448 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-11T21:29:17.132+02:00  INFO 448 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-11T21:29:17.845+02:00  INFO 448 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-11T21:29:17.944+02:00  WARN 448 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-11T21:29:18.222+02:00 ERROR 448 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T21:29:18.223+02:00  WARN 448 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T21:29:18.236+02:00  WARN 448 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-11T21:29:18.237+02:00  INFO 448 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-11T21:29:18.242+02:00  INFO 448 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-11T21:29:18.247+02:00  INFO 448 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-06-11T21:29:18.272+02:00  INFO 448 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-06-12T14:13:47.801+02:00  INFO 6412 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 6412 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
+2024-06-12T14:13:47.814+02:00  INFO 6412 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T14:13:47.956+02:00  INFO 6412 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12T14:13:47.956+02:00  INFO 6412 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12T14:13:50.128+02:00  INFO 6412 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T14:13:50.284+02:00  INFO 6412 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 2 JPA repository interfaces.
+2024-06-12T14:13:52.113+02:00  INFO 6412 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-12T14:13:52.145+02:00  INFO 6412 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-12T14:13:52.145+02:00  INFO 6412 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-12T14:13:52.356+02:00  INFO 6412 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-12T14:13:52.356+02:00  INFO 6412 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4400 ms
+2024-06-12T14:13:52.434+02:00  INFO 6412 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T14:13:53.033+02:00  INFO 6412 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-06-12T14:13:53.033+02:00  INFO 6412 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T14:13:53.064+02:00  INFO 6412 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-12T14:13:53.442+02:00  INFO 6412 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T14:13:53.598+02:00  INFO 6412 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-12T14:13:53.692+02:00  INFO 6412 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T14:13:54.583+02:00  INFO 6412 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T14:13:54.692+02:00  WARN 6412 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-12T14:13:54.942+02:00 ERROR 6412 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:13:54.942+02:00  WARN 6412 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:13:54.958+02:00  WARN 6412 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-12T14:13:54.958+02:00  INFO 6412 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-12T14:13:54.958+02:00  INFO 6412 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-12T14:13:54.974+02:00  INFO 6412 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-12T14:13:54.989+02:00  INFO 6412 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-06-11T21:29:18.320+02:00 ERROR 448 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-06-12T14:13:55.036+02:00 ERROR 6412 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
@@ -286,36 +286,36 @@ Caused by: org.hibernate.AnnotationException: Entity 'se.mehdi.securewebapp.enti
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
 	... 18 common frames omitted
 
-2024-06-11T22:02:14.042+02:00  INFO 13304 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 13304 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
-2024-06-11T22:02:14.052+02:00  INFO 13304 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-06-11T22:02:14.214+02:00  INFO 13304 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-11T22:02:14.215+02:00  INFO 13304 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-11T22:02:16.541+02:00  INFO 13304 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-11T22:02:16.593+02:00  INFO 13304 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 JPA repository interfaces.
-2024-06-11T22:02:18.359+02:00  INFO 13304 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-11T22:02:18.391+02:00  INFO 13304 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-11T22:02:18.391+02:00  INFO 13304 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-11T22:02:18.522+02:00  INFO 13304 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-11T22:02:18.524+02:00  INFO 13304 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4307 ms
-2024-06-11T22:02:18.617+02:00  INFO 13304 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-11T22:02:19.267+02:00  INFO 13304 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-06-11T22:02:19.272+02:00  INFO 13304 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-11T22:02:19.316+02:00  INFO 13304 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-06-11T22:02:19.844+02:00  INFO 13304 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-11T22:02:20.151+02:00  INFO 13304 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-11T22:02:20.271+02:00  INFO 13304 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-11T22:02:21.285+02:00  INFO 13304 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-11T22:02:21.449+02:00  WARN 13304 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-11T22:02:21.773+02:00 ERROR 13304 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T22:02:21.774+02:00  WARN 13304 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T22:02:21.784+02:00  WARN 13304 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-11T22:02:21.784+02:00  INFO 13304 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-11T22:02:21.787+02:00  INFO 13304 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-11T22:02:21.792+02:00  INFO 13304 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-06-11T22:02:21.815+02:00  INFO 13304 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-06-12T14:14:21.982+02:00  INFO 12964 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 12964 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
+2024-06-12T14:14:21.997+02:00  INFO 12964 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T14:14:22.162+02:00  INFO 12964 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12T14:14:22.162+02:00  INFO 12964 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12T14:14:24.351+02:00  INFO 12964 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T14:14:24.491+02:00  INFO 12964 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
+2024-06-12T14:14:26.089+02:00  INFO 12964 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-12T14:14:26.136+02:00  INFO 12964 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-12T14:14:26.137+02:00  INFO 12964 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-12T14:14:26.275+02:00  INFO 12964 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-12T14:14:26.275+02:00  INFO 12964 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4113 ms
+2024-06-12T14:14:26.367+02:00  INFO 12964 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T14:14:26.923+02:00  INFO 12964 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-06-12T14:14:26.923+02:00  INFO 12964 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T14:14:26.954+02:00  INFO 12964 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-12T14:14:27.430+02:00  INFO 12964 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T14:14:27.578+02:00  INFO 12964 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-12T14:14:27.673+02:00  INFO 12964 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T14:14:28.467+02:00  INFO 12964 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T14:14:28.577+02:00  WARN 12964 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-12T14:14:28.861+02:00 ERROR 12964 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:14:28.861+02:00  WARN 12964 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:14:28.877+02:00  WARN 12964 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-12T14:14:28.877+02:00  INFO 12964 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-12T14:14:28.893+02:00  INFO 12964 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-12T14:14:28.893+02:00  INFO 12964 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-12T14:14:28.924+02:00  INFO 12964 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-06-11T22:02:21.883+02:00 ERROR 13304 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-06-12T14:14:28.986+02:00 ERROR 12964 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
@@ -358,36 +358,36 @@ Caused by: org.hibernate.AnnotationException: Entity 'se.mehdi.securewebapp.enti
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
 	... 18 common frames omitted
 
-2024-06-11T22:38:51.585+02:00  INFO 8488 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 8488 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
-2024-06-11T22:38:51.590+02:00  INFO 8488 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-06-11T22:38:51.753+02:00  INFO 8488 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-11T22:38:51.753+02:00  INFO 8488 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-11T22:38:53.732+02:00  INFO 8488 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-11T22:38:53.786+02:00  INFO 8488 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 JPA repository interfaces.
-2024-06-11T22:38:55.456+02:00  INFO 8488 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-11T22:38:55.490+02:00  INFO 8488 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-11T22:38:55.491+02:00  INFO 8488 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-11T22:38:55.626+02:00  INFO 8488 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-11T22:38:55.626+02:00  INFO 8488 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3872 ms
-2024-06-11T22:38:55.746+02:00  INFO 8488 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-11T22:38:56.168+02:00  INFO 8488 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-06-11T22:38:56.175+02:00  INFO 8488 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-11T22:38:56.227+02:00  INFO 8488 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-06-11T22:38:56.596+02:00  INFO 8488 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-11T22:38:56.725+02:00  INFO 8488 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-11T22:38:56.795+02:00  INFO 8488 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-11T22:38:57.627+02:00  INFO 8488 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-11T22:38:57.736+02:00  WARN 8488 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-11T22:38:58.045+02:00 ERROR 8488 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T22:38:58.045+02:00  WARN 8488 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T22:38:58.056+02:00  WARN 8488 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-11T22:38:58.056+02:00  INFO 8488 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-11T22:38:58.066+02:00  INFO 8488 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-11T22:38:58.070+02:00  INFO 8488 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-06-11T22:38:58.100+02:00  INFO 8488 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-06-12T14:16:16.760+02:00  INFO 12620 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 12620 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
+2024-06-12T14:16:16.760+02:00  INFO 12620 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T14:16:16.894+02:00  INFO 12620 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12T14:16:16.894+02:00  INFO 12620 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12T14:16:18.836+02:00  INFO 12620 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T14:16:18.992+02:00  INFO 12620 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 2 JPA repository interfaces.
+2024-06-12T14:16:20.617+02:00  INFO 12620 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-12T14:16:20.649+02:00  INFO 12620 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-12T14:16:20.649+02:00  INFO 12620 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-12T14:16:20.788+02:00  INFO 12620 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-12T14:16:20.788+02:00  INFO 12620 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3888 ms
+2024-06-12T14:16:20.881+02:00  INFO 12620 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T14:16:21.335+02:00  INFO 12620 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-06-12T14:16:21.335+02:00  INFO 12620 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T14:16:21.350+02:00  INFO 12620 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-12T14:16:21.713+02:00  INFO 12620 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T14:16:21.854+02:00  INFO 12620 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-12T14:16:21.932+02:00  INFO 12620 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T14:16:22.667+02:00  INFO 12620 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T14:16:22.776+02:00  WARN 12620 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-12T14:16:23.057+02:00 ERROR 12620 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:16:23.057+02:00  WARN 12620 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:16:23.073+02:00  WARN 12620 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-12T14:16:23.073+02:00  INFO 12620 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-12T14:16:23.073+02:00  INFO 12620 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-12T14:16:23.088+02:00  INFO 12620 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-12T14:16:23.104+02:00  INFO 12620 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-06-11T22:38:58.151+02:00 ERROR 8488 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-06-12T14:16:23.167+02:00 ERROR 12620 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
@@ -430,36 +430,36 @@ Caused by: org.hibernate.AnnotationException: Entity 'se.mehdi.securewebapp.enti
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.8.jar:6.1.8]
 	... 18 common frames omitted
 
-2024-06-11T22:39:46.213+02:00  INFO 5296 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 5296 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
-2024-06-11T22:39:46.219+02:00  INFO 5296 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
-2024-06-11T22:39:46.344+02:00  INFO 5296 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-11T22:39:46.344+02:00  INFO 5296 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-11T22:39:48.519+02:00  INFO 5296 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-11T22:39:48.570+02:00  INFO 5296 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 0 JPA repository interfaces.
-2024-06-11T22:39:50.193+02:00  INFO 5296 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-06-11T22:39:50.227+02:00  INFO 5296 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-11T22:39:50.227+02:00  INFO 5296 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-11T22:39:50.375+02:00  INFO 5296 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-11T22:39:50.376+02:00  INFO 5296 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4028 ms
-2024-06-11T22:39:50.462+02:00  INFO 5296 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-11T22:39:50.946+02:00  INFO 5296 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-06-11T22:39:50.951+02:00  INFO 5296 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-11T22:39:50.992+02:00  INFO 5296 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-06-11T22:39:51.337+02:00  INFO 5296 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-11T22:39:51.466+02:00  INFO 5296 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-11T22:39:51.562+02:00  INFO 5296 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-11T22:39:52.277+02:00  INFO 5296 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-11T22:39:52.359+02:00  WARN 5296 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-11T22:39:52.645+02:00 ERROR 5296 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T22:39:52.646+02:00  WARN 5296 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
-2024-06-11T22:39:52.662+02:00  WARN 5296 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-11T22:39:52.662+02:00  INFO 5296 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-11T22:39:52.668+02:00  INFO 5296 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-11T22:39:52.669+02:00  INFO 5296 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-06-11T22:39:52.698+02:00  INFO 5296 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-06-12T14:17:48.800+02:00  INFO 11104 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.1 with PID 11104 (C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete\Grupparbete\target\classes started by Coachgruppen Uppsala in C:\Users\Coachgruppen Uppsala\IdeaProjects\Grupparbete)
+2024-06-12T14:17:48.800+02:00  INFO 11104 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T14:17:48.943+02:00  INFO 11104 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-12T14:17:48.943+02:00  INFO 11104 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-12T14:17:50.892+02:00  INFO 11104 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T14:17:51.033+02:00  INFO 11104 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 2 JPA repository interfaces.
+2024-06-12T14:17:52.608+02:00  INFO 11104 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-12T14:17:52.639+02:00  INFO 11104 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-12T14:17:52.639+02:00  INFO 11104 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-12T14:17:52.764+02:00  INFO 11104 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-12T14:17:52.764+02:00  INFO 11104 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3821 ms
+2024-06-12T14:17:52.842+02:00  INFO 11104 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T14:17:53.217+02:00  INFO 11104 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-06-12T14:17:53.233+02:00  INFO 11104 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T14:17:53.249+02:00  INFO 11104 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-12T14:17:53.560+02:00  INFO 11104 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T14:17:53.704+02:00  INFO 11104 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-12T14:17:53.782+02:00  INFO 11104 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T14:17:54.422+02:00  INFO 11104 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T14:17:54.516+02:00  WARN 11104 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-12T14:17:54.766+02:00 ERROR 11104 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:17:54.766+02:00  WARN 11104 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-06-12T14:17:54.782+02:00  WARN 11104 --- [Grupparbete] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-12T14:17:54.782+02:00  INFO 11104 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-12T14:17:54.782+02:00  INFO 11104 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-12T14:17:54.782+02:00  INFO 11104 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-12T14:17:54.813+02:00  INFO 11104 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-06-11T22:39:52.747+02:00 ERROR 5296 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-06-12T14:17:54.876+02:00 ERROR 11104 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'se.mehdi.securewebapp.entity.AppUser' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.8.jar:6.1.8]
