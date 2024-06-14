@@ -1,6 +1,6 @@
 package se.mehdi.securewebapp.entity;
 
-
+//Mehdi
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
