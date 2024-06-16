@@ -1,33 +1,34 @@
+//Mehdi
 package se.mehdi.securewebapp.entity;
 
-//Mehdi
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.ManyToMany;
-import org.springframework.data.annotation.Id;
-
-import java.util.Set;
 
 @Entity
 public class Role {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
 
-    @ManyToMany(mappedBy = "roles")
-    private Set<AppUser> users;
+    // Glöm ej getters and setters
 
-    // Glöm ej att lägga Getter och Setter
+   // public Role() {}
 
+    //public Role(String name) {
+      // this.name = name;
+    //}
 
-    public Set<AppUser> getUsers() {
-        return users;
+    public Long getId() {
+        return id;
     }
 
-    public void setUsers(Set<AppUser> users) {
-        this.users = users;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -37,13 +38,4 @@ public class Role {
     public void setName(String name) {
         this.name = name;
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 }
-
