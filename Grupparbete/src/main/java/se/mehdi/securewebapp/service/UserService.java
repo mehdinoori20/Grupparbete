@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import se.mehdi.securewebapp.entity.AppUser;
 import se.mehdi.securewebapp.repository.UserRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -41,5 +42,12 @@ public class UserService {
         } else {
             throw new UsernameNotFoundException("User not found");
         }
+    }
+    public List<AppUser> findAllUsers() {
+        return userRepository.findAll();
+    }
+
+    public AppUser findUserById(Long id) {
+        return userRepository.findById(id).orElse(null);
     }
 }
