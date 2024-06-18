@@ -1,4 +1,3 @@
-//Mehdi
 package se.mehdi.securewebapp.entity;
 
 import jakarta.persistence.Entity;

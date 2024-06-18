@@ -1,4 +1,3 @@
-//Mehdi
 package se.mehdi.securewebapp;
 
 import org.springframework.boot.SpringApplication;
