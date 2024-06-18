@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Grupparbete.iml" filepath="$PROJECT_DIR$/.idea/Grupparbete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Grupparbete/Grupparbete.iml" filepath="$PROJECT_DIR$/Grupparbete/Grupparbete.iml" />
     </modules>
   </component>
 </project>
