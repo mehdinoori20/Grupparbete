@@ -1,3 +1,14 @@
+/*
+Info om GrupparbeteController, @Controller säger att denna klass hanterar HTTP requests och @RequestMapping mappar alla requests med paths som vi själva sätter.
+
+vi injecserar en userService med hjälp av @Autowired
+
+@GetMapping sätter upp en endpoint åt oss det metoden retunerar visas på denna endpoint. i vårat fall retunerar vi olika htlm sidor.
+
+RegisterForm metoden tar in en "model" det man kan säga är att på denna endpoint skapar vi en ny AppUser som vi sedan kan lagra i våran databas
+
+
+ */
 package se.mehdi.securewebapp;
 
 import org.springframework.beans.factory.annotation.Autowired;

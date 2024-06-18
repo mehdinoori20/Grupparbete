@@ -1,3 +1,9 @@
+/*
+Info om AppUser @Entity annoteringen säger till oss att detta är en "entity" i en databas @Id specificerar att primary key:en är id och @GeneratedValue gör så att
+databasen genererar värdet åt oss. Username, firstname etc är olika fält i vårat table som har getters och setters för modifiering. alla attribut är privata då vi inte vill
+att vem som helst ska ha tillgång till dessa värden.
+ */
+
 package se.mehdi.securewebapp.entity;
 
 import jakarta.persistence.Entity;

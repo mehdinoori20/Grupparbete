@@ -1,3 +1,7 @@
+/*
+Info om Role, Role fungerar i stort sätt på samma sätt som AppUser skillnaden här är att vi bara har ett attribut name
+ */
+
 package se.mehdi.securewebapp.entity;
 
 import jakarta.persistence.Entity;
