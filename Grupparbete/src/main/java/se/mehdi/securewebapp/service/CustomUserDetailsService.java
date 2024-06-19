@@ -1,4 +1,5 @@
-
+//Den används av Spring Security för att ladda användardetaljer vid inloggning. När en användare försöker logga in med sitt användarnamn och lösenord, anropar Spring Security loadUserByUsername för att hämta användarens information från databasen.
+//Den returnerade UserDetails-instansen används sedan av Spring Security för att verifiera användarens identitet och hantera inloggningsprocessen.
 package se.mehdi.securewebapp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         return org.springframework.security.core.userdetails.User
                 .withUsername(user.getUsername())
                 .password(user.getPassword())
-                .roles("USER") // här kan vi user.getRoles()
+                .roles("USER")
                 .build();
     }
 }
