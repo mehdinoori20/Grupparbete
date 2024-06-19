@@ -34,20 +34,22 @@ class UserServiceTest {
         MockitoAnnotations.openMocks(this);
     }
 
-    @Test
+    @Test // en test metod som ska köras av JUnit
     void registerUser() {
-        // Arrange
-        AppUser user = new AppUser();
+        // ordna eller inrätta
+        AppUser user = new AppUser(); // skapar en ny instans av AppUser som antas vara en entitetsklass som representerar user i applikationen.
         user.setUsername("testuser");
-        user.setPassword("password");
+        user.setPassword("password"); // sätter Username och password till en user.
 
+        // genom att använda 'when' och 'thenReturn' kan man definera hur mockade metoder ska bete sig under testing.
         when(passwordEncoder.encode(any())).thenReturn("encodedPassword");
         when(userRepository.save(any())).thenReturn(user);
 
-        // Act
+        // genom att anropa denna metod så får man tillbaka en instans av 'AppUser' som representerar den användare som har registrerats
+        // och underlättar att integrera och testa användarhantering i sprint-applikationen med hjälp av lämpliga enhetstestningar.
         AppUser registeredUser = userService.registerUser(user);
 
-        // Assert
+        // denna kod kontrollerar att user fungerar korrekt genom att säkerställa, kontrollera och verifierar
         assertNotNull(registeredUser);
         assertEquals("testuser", registeredUser.getUsername());
         assertEquals("encodedPassword", registeredUser.getPassword());
@@ -56,10 +58,10 @@ class UserServiceTest {
 
     @Test
     void deleteUser() {
-        // Arrange
+        // ordnar
         Long userId = 1L;
 
-        // Act
+        // agerar
         userService.deleteUser(userId);
 
         // Assert
@@ -68,7 +70,7 @@ class UserServiceTest {
 
     @Test
     void updateUserPassword_UserExists() {
-        // Arrange
+        // ordnar
         String username = "testuser";
         String newPassword = "newPassword";
         AppUser existingUser = new AppUser();
@@ -79,7 +81,7 @@ class UserServiceTest {
         when(passwordEncoder.encode(newPassword)).thenReturn("encodedNewPassword");
         when(userRepository.save(any())).thenAnswer(invocation -> invocation.getArgument(0));
 
-        // Act
+        // agerar
         AppUser updatedUser = userService.updateUserPassword(username, newPassword);
 
         // Assert
