@@ -1,3 +1,18 @@
+/*
+Info om SecurityConfig, Vi kan börja med annotationerna @Configuration och @EnableWebSecurity, @Configuration säger till springboot att här har vi en samlig med @Bean:s
+Beans är ett sätt att markera metoder som returnerar objekt ett enkelt exempel i denna config kan vara PasswordEncoder den retunerar bara obejktet "BCryptPasswordEncoder"
+och med hjälp av @Bean så kan vi använda denna metod på olika ställen i våran Springboot applikation. @EnableWebSecurity är lite som det låter, det ger oss ett extra lager
+säkerhet
+
+I securityFilterChain sätter vi vissa krav på olika endpoints för att komma åt admin måste användaren ha rollen admin t.ex. men på registrerings sidan kör vi .permitAll()
+vilket som det låter tillåter vem som helst in på endpointen.
+vi har även "redirects" om "loginformen" är successfull så skickas vi till "/" endpointen som i vårat fall är home pagen och om vi loggar ut skickas vi till "/logged-out"
+endpointen
+
+passwordEncoder är ett sätt för oss att hasha lösenord och att göra dom mer säkra.
+
+ */
+
 package se.mehdi.securewebapp.config;
 
 import org.springframework.context.annotation.Bean;
