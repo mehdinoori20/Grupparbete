@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-/*
-Info om Role, Role fungerar i stort sätt på samma sätt som AppUser skillnaden här är att vi bara har ett attribut name
- */
->>>>>>> 1907d18a1f3fc60904cf67263ea92713a65e451c
-
 package se.mehdi.securewebapp.entity;
 
 import jakarta.persistence.Entity;
