@@ -1,7 +1,144 @@
-2024-06-18T09:10:56.253+02:00  WARN 5928 --- [Grupparbete] [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=1d5h10m12s302ms318µs200ns).
-2024-06-18T09:18:15.454+02:00  WARN 5928 --- [Grupparbete] [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=5m19s141ms640µs200ns).
-2024-06-18T10:12:48.136+02:00  WARN 5928 --- [Grupparbete] [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=34m2s223ms468µs500ns).
-2024-06-18T10:19:52.307+02:00  INFO 5928 --- [Grupparbete] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-18T10:19:52.644+02:00  WARN 5928 --- [Grupparbete] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-18T10:19:52.647+02:00  INFO 5928 --- [Grupparbete] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
-2024-06-18T10:19:52.662+02:00  INFO 5928 --- [Grupparbete] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-06-19T01:14:18.641+02:00  INFO 12528 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.2 with PID 12528 (C:\Users\Sertan\Documents\grupparbete\Grupparbete\target\classes started by Sertan in C:\Users\Sertan\Documents\grupparbete)
+2024-06-19T01:14:18.687+02:00  INFO 12528 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-19T01:14:18.882+02:00  INFO 12528 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-19T01:14:18.883+02:00  INFO 12528 --- [Grupparbete] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-19T01:14:21.205+02:00  INFO 12528 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-19T01:14:21.353+02:00  INFO 12528 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 2 JPA repository interfaces.
+2024-06-19T01:14:23.077+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-19T01:14:23.112+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19T01:14:23.115+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-19T01:14:23.243+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19T01:14:23.244+02:00  INFO 12528 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4359 ms
+2024-06-19T01:14:23.340+02:00  INFO 12528 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19T01:14:23.974+02:00  INFO 12528 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-06-19T01:14:23.979+02:00  INFO 12528 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19T01:14:24.010+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-19T01:14:24.496+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-19T01:14:24.721+02:00  INFO 12528 --- [Grupparbete] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-19T01:14:24.836+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-19T01:14:25.674+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-19T01:14:25.820+02:00  WARN 12528 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-19T01:14:28.272+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-19T01:14:28.436+02:00  INFO 12528 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-19T01:14:29.359+02:00  WARN 12528 --- [Grupparbete] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-19T01:14:29.446+02:00  INFO 12528 --- [Grupparbete] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-06-19T01:14:30.151+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5669fb14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64e5db9e, org.springframework.security.web.context.SecurityContextHolderFilter@7036a0, org.springframework.security.web.header.HeaderWriterFilter@223d649b, org.springframework.web.filter.CorsFilter@2ede7ef2, org.springframework.security.web.csrf.CsrfFilter@67f73d58, org.springframework.security.web.authentication.logout.LogoutFilter@11d3a5ed, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@9c4f1c6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c5f9285, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3d3871d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1857b519, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78090a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24908c3c, org.springframework.security.web.access.ExceptionTranslationFilter@53b49c99, org.springframework.security.web.access.intercept.AuthorizationFilter@2766a9bd]
+2024-06-19T01:14:30.164+02:00  WARN 12528 --- [Grupparbete] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore DispatcherServletDelegating [ant = Ant [pattern='/h2-console/'], mvc = Mvc [pattern='/h2-console/']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-19T01:14:30.165+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure DispatcherServletDelegating [ant = Ant [pattern='/h2-console/'], mvc = Mvc [pattern='/h2-console/']]
+2024-06-19T01:14:30.165+02:00  WARN 12528 --- [Grupparbete] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore DispatcherServletDelegating [ant = Ant [pattern='/register'], mvc = Mvc [pattern='/register']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-19T01:14:30.166+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure DispatcherServletDelegating [ant = Ant [pattern='/register'], mvc = Mvc [pattern='/register']]
+2024-06-19T01:14:30.166+02:00  WARN 12528 --- [Grupparbete] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore DispatcherServletDelegating [ant = Ant [pattern='/update/'], mvc = Mvc [pattern='/update/']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-19T01:14:30.166+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure DispatcherServletDelegating [ant = Ant [pattern='/update/'], mvc = Mvc [pattern='/update/']]
+2024-06-19T01:14:30.167+02:00  WARN 12528 --- [Grupparbete] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore DispatcherServletDelegating [ant = Ant [pattern='/delete/'], mvc = Mvc [pattern='/delete/']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-19T01:14:30.170+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure DispatcherServletDelegating [ant = Ant [pattern='/delete/'], mvc = Mvc [pattern='/delete/']]
+2024-06-19T01:14:30.901+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-19T01:14:31.001+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-19T01:14:31.025+02:00  INFO 12528 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Started GrupparbeteApplication in 13.595 seconds (process running for 22.504)
+2024-06-19T02:23:28.535+02:00  INFO 12528 --- [Grupparbete] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-19T02:23:28.567+02:00  INFO 12528 --- [Grupparbete] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-19T02:23:28.600+02:00  WARN 12528 --- [Grupparbete] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-19T02:23:28.602+02:00  INFO 12528 --- [Grupparbete] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-19T02:23:28.607+02:00  INFO 12528 --- [Grupparbete] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-19T02:23:28.862+02:00  INFO 12528 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.2 with PID 12528 (C:\Users\Sertan\Documents\grupparbete\Grupparbete\target\classes started by Sertan in C:\Users\Sertan\Documents\grupparbete)
+2024-06-19T02:23:28.864+02:00  INFO 12528 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-19T02:23:29.835+02:00  INFO 12528 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-19T02:23:29.861+02:00  WARN 12528 --- [Grupparbete] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type se.mehdi.securewebapp.entity.AppUser not present
+2024-06-19T02:23:29.873+02:00  INFO 12528 --- [Grupparbete] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-19T02:23:29.941+02:00 ERROR 12528 --- [Grupparbete] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.TypeNotPresentException: Type se.mehdi.securewebapp.entity.AppUser not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95) ~[na:na]
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1296) ~[na:na]
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.data.util.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:256) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.util.ClassTypeInformation.getSuperTypeInformation(ClassTypeInformation.java:36) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.util.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:327) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:77) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:91) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:168) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions(AbstractRepositoryConfigurationSourceSupport.java:62) ~[spring-boot-autoconfigure-3.3.0.jar:3.3.0]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376) ~[spring-context-6.1.8.jar:6.1.8]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at se.mehdi.securewebapp.GrupparbeteApplication.main(GrupparbeteApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+Caused by: java.lang.ClassNotFoundException: se.mehdi.securewebapp.entity.AppUser
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114) ~[na:na]
+	... 39 common frames omitted
+
+2024-06-19T02:23:33.589+02:00  INFO 12528 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Starting GrupparbeteApplication using Java 21.0.2 with PID 12528 (C:\Users\Sertan\Documents\grupparbete\Grupparbete\target\classes started by Sertan in C:\Users\Sertan\Documents\grupparbete)
+2024-06-19T02:23:33.591+02:00  INFO 12528 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-19T02:23:34.434+02:00  INFO 12528 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-19T02:23:34.473+02:00  INFO 12528 --- [Grupparbete] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2024-06-19T02:23:35.013+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-19T02:23:35.018+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19T02:23:35.020+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-19T02:23:35.082+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19T02:23:35.082+02:00  INFO 12528 --- [Grupparbete] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1484 ms
+2024-06-19T02:23:35.147+02:00  INFO 12528 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-19T02:23:35.154+02:00  INFO 12528 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn30: url=jdbc:h2:mem:testdb user=SA
+2024-06-19T02:23:35.155+02:00  INFO 12528 --- [Grupparbete] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-19T02:23:35.156+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-06-19T02:23:35.308+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-19T02:23:35.335+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-19T02:23:35.377+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-19T02:23:35.385+02:00  WARN 12528 --- [Grupparbete] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-19T02:23:35.699+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-19T02:23:35.731+02:00  INFO 12528 --- [Grupparbete] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-19T02:23:36.152+02:00  WARN 12528 --- [Grupparbete] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-19T02:23:36.196+02:00  INFO 12528 --- [Grupparbete] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-06-19T02:23:36.783+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43485693, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c61cf6a, org.springframework.security.web.context.SecurityContextHolderFilter@7cca916, org.springframework.security.web.header.HeaderWriterFilter@3943a2f9, org.springframework.web.filter.CorsFilter@2ece209d, org.springframework.security.web.csrf.CsrfFilter@18fb0ded, org.springframework.security.web.authentication.logout.LogoutFilter@114e1b9b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ee0f578, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5dba7406, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@278c4b09, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47984867, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79ca55ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26f16da5, org.springframework.security.web.access.ExceptionTranslationFilter@2962f1c1, org.springframework.security.web.access.intercept.AuthorizationFilter@6f13a9c2]
+2024-06-19T02:23:36.793+02:00  WARN 12528 --- [Grupparbete] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore DispatcherServletDelegating [ant = Ant [pattern='/h2-console/'], mvc = Mvc [pattern='/h2-console/']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-19T02:23:36.793+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure DispatcherServletDelegating [ant = Ant [pattern='/h2-console/'], mvc = Mvc [pattern='/h2-console/']]
+2024-06-19T02:23:36.794+02:00  WARN 12528 --- [Grupparbete] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore DispatcherServletDelegating [ant = Ant [pattern='/register'], mvc = Mvc [pattern='/register']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-19T02:23:36.795+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure DispatcherServletDelegating [ant = Ant [pattern='/register'], mvc = Mvc [pattern='/register']]
+2024-06-19T02:23:36.795+02:00  WARN 12528 --- [Grupparbete] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore DispatcherServletDelegating [ant = Ant [pattern='/update/'], mvc = Mvc [pattern='/update/']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-19T02:23:36.795+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure DispatcherServletDelegating [ant = Ant [pattern='/update/'], mvc = Mvc [pattern='/update/']]
+2024-06-19T02:23:36.795+02:00  WARN 12528 --- [Grupparbete] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore DispatcherServletDelegating [ant = Ant [pattern='/delete/'], mvc = Mvc [pattern='/delete/']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-19T02:23:36.796+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure DispatcherServletDelegating [ant = Ant [pattern='/delete/'], mvc = Mvc [pattern='/delete/']]
+2024-06-19T02:23:37.277+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-19T02:23:37.331+02:00  INFO 12528 --- [Grupparbete] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-19T02:23:37.345+02:00  INFO 12528 --- [Grupparbete] [restartedMain] s.m.securewebapp.GrupparbeteApplication  : Started GrupparbeteApplication in 3.854 seconds (process running for 4168.825)
+2024-06-19T02:23:37.353+02:00  INFO 12528 --- [Grupparbete] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-19T02:25:17.884+02:00  INFO 12528 --- [Grupparbete] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-19T02:25:17.891+02:00  WARN 12528 --- [Grupparbete] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-19T02:25:17.893+02:00  INFO 12528 --- [Grupparbete] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-06-19T02:25:17.895+02:00  INFO 12528 --- [Grupparbete] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
