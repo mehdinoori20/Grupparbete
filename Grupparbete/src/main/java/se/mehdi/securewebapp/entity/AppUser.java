@@ -83,4 +83,9 @@ public class AppUser {
     public void setEmail(String email) {
         this.email = email;
     }
+    public void updateUser(AppUser updatedUser) {
+        this.firstname = updatedUser.getFirstname();
+        this.lastname = updatedUser.getLastname();
+        this.email = updatedUser.getEmail();
+    }
 }

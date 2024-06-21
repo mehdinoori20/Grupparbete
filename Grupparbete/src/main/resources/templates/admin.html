@@ -8,9 +8,38 @@
 <p>Here is all the information.</p>
 <ul>
     <li><a th:href="@{/addUser}">Add User</a></li>
-    <li><a th:href="@{/deleteUser}">Delete User</a></li>
-    <li><a th:href="@{/updateUser}">Update User</a></li>
     <li><a th:href="@{/logout}">Logout</a></li>
 </ul>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.firstname}"></td>
+        <td th:text="${user.lastname}"></td>
+        <td th:text="${user.age}"></td>
+        <td th:text="${user.email}"></td>
+        <td>
+            <a th:href="@{/admin/update(id=${user.id})}">Update</a>
+            <form th:action="@{/admin/delete}" method="post" style="display:inline;">
+                <input type="hidden" name="id" th:value="${user.id}" />
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

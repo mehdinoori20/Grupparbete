@@ -1,25 +1,6 @@
-/*
-Info om UserService, @Service annotationen är lite svår att förklara man kan säga att denna class "servar" Users
-
-Vi börjar med att injecta metoder från UserRepository med hjälp av @Autowired
-Vi gör samma med passwordEncoder.
-Dessa två är våra "dependencies" man kan säga att det är metoder som vår class är "dependent" av för att fungera som den ska.
-
-Vissa metoder har @Transactional annotationen detta betyder att vi ser till så att allt i databasen faktiskt uppdateras om något failar så failas allt så att inget konstigt händer
-i våran databas.
-
-Eftersom vi använde oss av extends JpaRepository i Vår Repository har vi tillgång till metoder som .save .delete mm
-
-metoderna I denna class är ganska självförklarande, registerUser  så sparar vi ser en ny user i våran databas, deleteUser tar bort en användare, updateUserPassword upadterar vi
-lösenordet, vi kollar först om användaren finns i databasen förståss.
-
-
- */
-
 package se.mehdi.securewebapp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,7 +8,6 @@ import se.mehdi.securewebapp.entity.AppUser;
 import se.mehdi.securewebapp.repository.UserRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserService {
@@ -39,9 +19,15 @@ public class UserService {
     private PasswordEncoder passwordEncoder;
 
     @Transactional
-    public AppUser registerUser(AppUser user) {
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        return userRepository.save(user);
+    public void registerUser(AppUser userDto) {
+        AppUser user = new AppUser();
+        user.setUsername(userDto.getUsername());
+        user.setPassword(passwordEncoder.encode(userDto.getPassword()));
+        user.setFirstname(userDto.getFirstname());
+        user.setLastname(userDto.getLastname());
+        user.setAge(userDto.getAge());
+        user.setEmail(userDto.getEmail());
+        userRepository.save(user);
     }
 
     @Transactional
@@ -50,16 +36,10 @@ public class UserService {
     }
 
     @Transactional
-    public AppUser updateUserPassword(String username, String newPassword) throws UsernameNotFoundException {
-        Optional<AppUser> userOptional = userRepository.findByUsername(username);
-        if (userOptional.isPresent()) {
-            AppUser user = userOptional.get();
-            user.setPassword(passwordEncoder.encode(newPassword));
-            return userRepository.save(user);
-        } else {
-            throw new UsernameNotFoundException("User not found");
-        }
+    public void updateUser(AppUser user) {
+        userRepository.save(user);
     }
+
     public List<AppUser> findAllUsers() {
         return userRepository.findAll();
     }
@@ -67,4 +47,7 @@ public class UserService {
     public AppUser findUserById(Long id) {
         return userRepository.findById(id).orElse(null);
     }
+    public AppUser findByUsername(String username) {
+        return userRepository.findByUsername(username).orElse(null);
+}
 }

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Login</title>
+    <title>Logged In</title>
 </head>
 <body>
-<form th:action="@{/login}" method="post">
-    <input type="text" name="username" placeholder="Username"/>
-    <input type="password" name="password" placeholder="Password"/>
-    <button type="submit">Login</button>
-</form>
+<h1>Welcome</h1>
+<p>You are successfully logged in.</p>
+<ul>
+    <li><a th:href="@{/admin}">Admin Panel</a></li>
+    <li><a th:href="@{/logout}">Logout</a></li>
+
+
+</ul>
 </body>
 </html>

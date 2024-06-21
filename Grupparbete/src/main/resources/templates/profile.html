@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+<h1>User Profile</h1>
+<p>Username: <span th:text="${user.username}"></span></p>
+<p>First Name: <span th:text="${user.firstname}"></span></p>
+<p>Last Name: <span th:text="${user.lastname}"></span></p>
+<p>Email: <span th:text="${user.email}"></span></p>
+
+<form th:action="@{/deleteAccount}" method="post">
+    <input type="hidden" name="_csrf" th:value="${_csrf.token}" />
+    <button type="submit">Delete Account</button>
+</form>
+
+<div th:if="${success}">
+    <p th:text="${success}"></p>
+</div>
+</body>
+</html>

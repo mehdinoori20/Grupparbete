@@ -1,22 +1,10 @@
-/*
-Info om GrupparbeteController, @Controller säger att denna klass hanterar HTTP requests och @RequestMapping mappar alla requests med paths som vi själva sätter.
-
-vi injecserar en userService med hjälp av @Autowired
-
-@GetMapping sätter upp en endpoint åt oss det metoden retunerar visas på denna endpoint. i vårat fall retunerar vi olika htlm sidor.
-
-RegisterForm metoden tar in en "model" det man kan säga är att på denna endpoint skapar vi en ny AppUser som vi sedan kan lagra i våran databas
-
-
- */
 package se.mehdi.securewebapp;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import se.mehdi.securewebapp.entity.AppUser;
 import se.mehdi.securewebapp.service.UserService;
@@ -42,19 +30,48 @@ public class GrupparbeteController {
     @PostMapping("/register")
     public String registerSubmit(AppUser user, RedirectAttributes redirectAttributes) {
         userService.registerUser(user);
-        redirectAttributes.addAttribute("success", true);
+        redirectAttributes.addFlashAttribute("success", "Registration successful!");
         return "redirect:/register";
     }
 
+    @GetMapping("/register/success")
+    public String registerSuccess() {
+        return "registerSuccess";
+    }
 
     @GetMapping("/login")
     public String showLoginForm() {
-        return "loggedIn";
+        return "login";
     }
 
     @GetMapping("/admin")
-    public String adminPage() {
+    public String adminPage(Model model) {
+        model.addAttribute("users", userService.findAllUsers());
         return "admin";
+    }
+
+    @PostMapping("/deleteUser/{id}")
+    public String deleteUser(@PathVariable Long id, RedirectAttributes redirectAttributes) {
+        userService.deleteUser(id);
+        redirectAttributes.addFlashAttribute("success", "User deleted successfully!");
+        return "redirect:/admin";
+    }
+
+    @GetMapping("/profile")
+    public String userProfile(Model model, Authentication authentication) {
+        String username = authentication.getName();
+        AppUser user = userService.findByUsername(username);
+        model.addAttribute("user", user);
+        return "profile";
+    }
+
+    @PostMapping("/deleteAccount")
+    public String deleteAccount(Authentication authentication, RedirectAttributes redirectAttributes) {
+        String username = authentication.getName();
+        AppUser user = userService.findByUsername(username);
+        userService.deleteUser(user.getId());
+        redirectAttributes.addFlashAttribute("success", "Your account has been deleted.");
+        return "redirect:/login";
     }
 
     @GetMapping("/logged-out")

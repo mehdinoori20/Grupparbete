@@ -35,6 +35,7 @@ public class SecurityConfig {
 
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .requestMatchers("/register", "/register/**").permitAll()
+                        .requestMatchers("/profile", "/deleteAccount").authenticated()
                         .anyRequest().authenticated()
                 )
 

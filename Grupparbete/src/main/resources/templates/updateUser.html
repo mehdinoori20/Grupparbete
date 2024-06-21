@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Register</title>
+    <title>Update User</title>
 </head>
 <body>
-<form th:action="@{/register}" method="post" th:object="${user}">
+<form th:action="@{/admin/update}" method="post" th:object="${user}">
+    <input type="hidden" th:field="*{id}" />
     <input type="text" th:field="*{username}" placeholder="Username"/>
     <input type="password" th:field="*{password}" placeholder="Password"/>
     <input type="text" th:field="*{firstname}" placeholder="First Name"/>
     <input type="text" th:field="*{lastname}" placeholder="Last Name"/>
     <input type="number" th:field="*{age}" placeholder="Age"/>
-    <button type="submit">Register</button>
+    <input type="email" th:field="*{email}" placeholder="Email"/>
+    <button type="submit">Update</button>
 </form>
-<div th:if="${success}">
-    <p th:text="${success}"></p>
-</div>
 </body>
 </html>
